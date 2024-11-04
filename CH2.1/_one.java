@@ -1,14 +1,13 @@
-
 import java.util.Scanner;
 
-public class sixteen {
+public class _one {
     
     public static void main(String[] args)
     {
         Scanner keyin = new Scanner(System.in);
         String a;
-        a = keyin.next();
-        System.out.print("**" + a + "**");
-        keyin.close(); 
+        a = keyin.nextLine();
+        System.out.print(a.length()); 
+        keyin.close();
     }
 }
