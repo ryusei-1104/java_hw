@@ -6,7 +6,7 @@ public class _seventeen {
     {
         Scanner keyin = new Scanner(System.in);
         String a;
-        a = keyin.next();
+        a = keyin.nextLine();
         System.out.print(a.toLowerCase());
         keyin.close();
     }

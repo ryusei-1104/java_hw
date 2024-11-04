@@ -11,15 +11,14 @@ public class _nineteen {
         a = keyin.nextLine();
         b = keyin.nextLine();
         c = keyin.nextLine();
-        for(int i = 0;i <= a.length()-b.length();i++)
+        for(int i = 0;i<=a.length()-b.length();i++)
         {
-            if(a.substring(i,i+b.length()).equalsIgnoreCase(b))
+            if(a.substring(i, i+b.length()).equalsIgnoreCase(b))
             {
-                
-                System.out.print(a.replaceAll(a.substring(i,i+b.length()), c));
-                break;
+                a = a.replaceAll(a.substring(i, i+b.length()),b);
             }
         }
+        System.out.print(a.replaceAll(b, c));
         keyin.close();
     }
 }
